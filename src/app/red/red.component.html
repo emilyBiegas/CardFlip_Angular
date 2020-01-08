@@ -1,22 +1,2 @@
-<section class="container">
-  <div
-    class="card"
-    *ngFor="let album of albums; index as i"
-    (click)="setIndex(i)"
-  >
-    <div class="front"></div>
-    <div class="cover" [ngClass]="{ showBack: index === i }">
-      <img src="{{ album.front }}" alt="album cover" />
-    </div>
-  </div>
-  <div
-    class="card"
-    *ngFor="let album of albums; index as i"
-    (click)="setIndexTwo(i)"
-  >
-    <div class="front"></div>
-    <div class="backCover" [ngClass]="{ showBackCover: indexTwo === i }">
-      <img src="{{ album.back }}" />
-    </div>
-  </div>
-</section>
+<h1>coming soon...</h1>
+<h3>Match the album's front cover with the back</h3>
