@@ -1,0 +1,29 @@
+<section class="container">
+  <div
+    class="card"
+    *ngFor="let album of albums; index as i"
+    (click)="setIndex(i)"
+    (click)="clickCounter()"
+    (click)="hideCards()"
+  >
+    <div class="front"></div>
+    <div class="back" [ngClass]="{ showBack: index === i, disappear: match }">
+      <img src="{{ album.front }}" alt="album cover" />
+    </div>
+  </div>
+  <div
+    class="card"
+    *ngFor="let tracklisting of tracklistings; index as i"
+    (click)="setIndexTwo(i)"
+    (click)="clickCounter()"
+    (click)="hideCards()"
+  >
+    <div class="front"></div>
+    <div
+      class=" song"
+      [ngClass]="{ showBackSong: indexTwo === i, disappear: match }"
+    >
+      <p>{{ tracklisting[trackNums[i]] }}</p>
+    </div>
+  </div>
+</section>

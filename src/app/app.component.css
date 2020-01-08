@@ -1,0 +1,20 @@
+h1,
+h2 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

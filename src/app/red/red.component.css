@@ -1,0 +1,65 @@
+.container {
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.front {
+  background-color: salmon;
+  border: 1px solid black;
+  height: 180px;
+  width: 180px;
+}
+
+.cover {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
+.showBack {
+  position: absolute;
+  visibility: visible;
+}
+
+img {
+  height: 180px;
+  width: 180px;
+  border: 1px solid black;
+}
+
+.song {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song p {
+  text-align: center;
+}
+
+.showBackCover {
+  position: absolute;
+  visibility: visible;
+}
